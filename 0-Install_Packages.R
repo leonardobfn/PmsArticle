@@ -1,6 +1,6 @@
 # Install Packages -------
 # run the code below to install the packages
-pack <- c("tidyr","extraDistr","devtools","Formula","dplyr","ggplot2")
+pack <- c("latex2exp","tidyr","extraDistr","devtools","Formula","dplyr","ggplot2")
 
 package.check <- lapply(
   pack,

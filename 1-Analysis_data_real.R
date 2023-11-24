@@ -5,7 +5,7 @@ require(dplyr)
 require(extraDistr)
 require(devtools)
 require(ggplot2)
-require(latex2exp)
+require(latex2exp) # for graphics
 devtools::load_all() # load the functions
 data(Manaus)# load the data
 data = Manaus
@@ -98,12 +98,3 @@ prob_cond_1 = gkumar_prob_cond_1(results,yt1 = 0.50,yt2 = 0.60) # P(Y_t>0.60|Y_{
 prob_cond_2 = gkumar_prob_cond_choose_2(results,h.before = 2)#P( Y_t>y{t},Y_{t-1}>y{t-1}|Y_{t-2}=y_{t-2} )
 
 
-#------ comments --------
-
-#'In some situations method 1 does not converge.
-#'To solve this situation, we use the profiled log-likelihood
-
-results_per_1 = gkumar_method_1_per(formula,data = data,n=132,erro=erro)
-coef(results_per)
-results_per_2 = gkumar_method_2_per(formula,data = data,n=132,erro=erro)
-coef(results_per_2)
