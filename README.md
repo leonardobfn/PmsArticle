@@ -1,6 +1,7 @@
 # PMS
-- This is a version 0.0.1 and should only be used reviewers
+
 - The simulation results are in the file Simulations_Results.xlsx
+- Code to reproduce the article's application
 - For installation:
   - Dowload R and Rstudio    
   - Download the zip file "PMS-master"
