@@ -1,6 +1,6 @@
 # PMS
 
-- The simulation results are in the file Simulations_Results.xlsx
+- The simulations results are in the file Simulations_Results.xlsx
 - Code to reproduce the article's application
 - For installation:
   - Dowload R and Rstudio    
