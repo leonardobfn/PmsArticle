@@ -1,6 +1,6 @@
 rm(list = ls())
 # packages--------------
-require(tidyr)
+require(tidyverse)
 require(dplyr)
 require(extraDistr)
 require(devtools)
@@ -19,7 +19,7 @@ results_2 = gkumar_method_2(formula,data,erro,n=132)
 
 coef(results_1)
 coef(results_2)
-
+saveRDS(results_1,"method_1.rds")
 results = results_2 # change the results
 
 # ---- Analysis of residuals------
