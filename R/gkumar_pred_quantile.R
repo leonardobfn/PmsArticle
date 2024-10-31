@@ -1,8 +1,16 @@
 gkumar_pred_quantile <- function(results, quant) {
   #quant = "runif"
-  data  = results$data.n
+
+
   formula = results$fomula
-  n = results$n
+  if(quant=="runif"){
+  n = nrow(data)#results$n
+  data  = results$data
+  }else{
+    data  = results$data.n
+    n = results$n
+  }
+
   estimates = results$coefficients[, 1]
   mf <- model.frame(Formula::Formula(formula), data = data)
   y <- model.response(mf)

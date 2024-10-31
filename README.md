@@ -1,6 +1,7 @@
 # PMS
 
 - The simulations results are in the file Simulations_Results.xlsx
+- The simulated intervals are in the "interval" folder.
 - Code to reproduce the article's application
 - For installation:
   - Download R and Rstudio    
